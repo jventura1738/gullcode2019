@@ -51,9 +51,13 @@ Sample Output: 4
 We have a robot that has been deployed on an infinite plane at position (0, 0) facing North. It is programmed to indefinitely execute a command string. He has been programmed with the following commands:
 
 F: Step one in the direction that he is facing
-+: Rotate 90 degrees clockwise
-- : Rotate 90 degrees counter-clockwise
- When the execution reaches the end of the command string, it repeats.
+
+(+): Rotate 90 degrees clockwise
+
+(-): Rotate 90 degrees counter-clockwise
+
+When the execution reaches the end of the command string, it repeats.
+
 
 Your job is to determine if a command string results in the robot repeating the same path, or not. In simpler terms, will the robot "loop" on any set of coordinates? The input will consist one string with a combination of the letters: "F", "+", "-". Your output should contain 0 if there is not a loop, and 1, #number of command strings it took to reach the loop, if there is a loop.
 
@@ -71,4 +75,57 @@ Sample Output 2: 0
 ### (4) SkyScraper Skyline
 
 A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Now suppose you are given the locations and height of all the buildings as shown on a cityscape photo (Figure A), write a program to output the skyline formed by these buildings collectively (Figure B). The geometric information of each building is represented by a triplet of integers [Li, Ri, Hi], where Li and Ri are the x coordinates of the left and right edge of the ith building, respectively, and Hi is its height. It is guaranteed that 0 ≤ Li, Ri ≤ INT_MAX, 0 < Hi ≤ INT_MAX, and Ri - Li > 0. You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0.
+
+Figure A                   |  Figure B
+:-------------------------:|:-------------------------:
+![](skyline1.png)          |  ![](skyline2.png)
+
+Your goal is to output a list of "key points" (red dots in Figure B) in the format of [ [x1,y1], [x2, y2], [x3, y3], ... ] that uniquely defines a skyline. A key point is the left endpoint of a horizontal line segment. Note that the last key point, where the rightmost building ends, is merely used to mark the termination of the skyline, and always has zero height. Also, the ground in between any two adjacent buildings should be considered part of the skyline contour.
+
+Sample Input: 2 9 10 3 7 15 5 12 12 15 50 10 19 24 8
+
+Sample Output: 2 10 3 15 7 12 12 0 15 10 20 8 24 0
+
+
+### (5) Nth Prime
+
+Given a number, n, your job is to output the nth prime number. 
+
+Sample Input: 100
+
+Sample Output: 541
+
+
+### (6) 101 Doors
+
+Given 101 shut doors, your job is to toggle (if open, close it; if closed, open it) the doors each time you pass through. However, each pass you will be toggling different doors. 
+
+
+- Pass 1: Toggle every door
+- Pass 2: Toggle every second door
+- Pass 3: Toggle every third door
+- Pass n: Toggle every nth door
+
+
+Continue this until you only visit the 101th door. What state are the doors in after the last pass?
+
+
+The input for the problem will be 0, 1, or 2. If it is 0, then all doors should be displayed. If it is 1, then only open doors should be displayed, if it is 2, then only closed doors should be displayed. 
+
+
+Print number of door, a space, and 0 if closed 1 if open. Separate each door be a new line.
+
+
+### (7) Bulls & Heifers
+
+On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches. If the matching digits are in their right positions, they are "bulls", if in different positions, they are "cows". Example:
+
+- Secret number: 4271
+- Opponent's try: 1234
+- Answer: 1 bull and 2 cows. (The bull is "2", the cows are "4" and "1".)
+
+
+The first one to reveal the other's secret number in the least number of guesses wins the game. Your task is to implement the game, which generates the string of integers and lets judges play the game to guess the string. The game should will terminate when the player wins.
+
+Please submit your code for this problem, and the judges will reply with a code if it is correct.
 
