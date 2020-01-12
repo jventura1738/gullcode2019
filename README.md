@@ -1,8 +1,10 @@
 # Gull Code 2019 Problems
 
-Gullcode 2019 problems worked on for fun.
+Problems from the 2019 Gull Code Competition at SU.
 
-Done in both C++ & Python.
+Each of these problems were completed without internet sources, otherwise it wouldn't even be practice.  I coded them in both C++ and Python, giving myself limited time to work on these and attempted to make them as efficient as possible (tested each input/output on the old Gull Code 2019 link from the actual competition to ensure completeness).  This is mostly just practice for Gull Code 2020, so any problems that are incomplete/broken will eventually be fixed.  Below are my team's actual statistics at the competition
+
+## Gull Code 2019 (November 16) Results
 
 ## Problem List
 
