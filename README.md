@@ -6,6 +6,11 @@ Each of these problems were completed without internet sources, otherwise it wou
 
 ## Gull Code 2019 (November 16) Results
 
+Information:
+
+- Team Members: myself (CS & DS double major, sophomore), Ian Thomas (CS major & web dev god, junior), Michael Mandulak (CS major, junior).
+- Team Name: Stable Marriage
+
 ## Problem List
 
 
