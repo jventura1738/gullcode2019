@@ -129,3 +129,87 @@ The first one to reveal the other's secret number in the least number of guesses
 
 Please submit your code for this problem, and the judges will reply with a code if it is correct.
 
+
+### (8) Rainfall
+
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+
+Example:
+
+Input: 2 0 2
+Output: 2
+
+Structure is like below
+| |
+|_|
+We can trap 2 units of water in the middle gap.
+
+Sample Input: 0 1 0 2 1 0 1 3 2 1 2 1
+
+Sample Output: 6
+
+
+### (9) Paper Strip Game
+
+Two players start with a strip of n white squares and they take alternate turns.
+
+On each turn, a player picks two contiguous white squares and paints them black.
+The first player who cannot make a move loses.
+
+If n = 1, there are no valid moves, so the first player loses automatically.
+If n = 2, there is only one valid move, after which the second player loses.
+If n = 3, there are two valid moves, but both leave a situation where the second player loses.
+If n = 4, there are three valid moves for the first player; she can win the game by painting the two middle squares.
+If n = 5, there are four valid moves for the first player (shown below in red); but no matter what she does, the second player (blue) wins.
+
+
+How many values of x are possible for the first player to force a win, for any given n where 0>n>100,000?
+
+
+Sample Input: 50
+
+Sample Output: 40
+
+
+### (10) SAT Problem
+
+The Boolean satisfiability problem (SAT) is a decision problem, whose instance is a Boolean expression written using only AND, OR, NOT, variables, and parentheses. The problem is: given the expression, is there some assignment of TRUE and FALSE values to the variables that will make the entire expression true? A formula of propositional logic is said to be satisfiable if logical values can be assigned to its variables in a way that makes the formula true.
+
+
+Your job is to read in a boolean expression and determine is the it is satisfiable. If it is not, your output should be 0. If it is, your output should be 1, followed by the variables' initial assignments that make it satisfiable.
+
+
+Here is your alphabet:
+
+Negation (-)
+Conjunction (&)
+Disjunction (V)
+XOR (+)
+Implies (->)
+Equivalence (<=>)
+
+
+Example:
+Input: (-a -> b) & -a & b
+
+Output: 1 a 0 b 1
+
+
+### (11) Random Dataset Linear Regression
+
+For this problem you are given a data set of an x value followed by a y value. Your job is to find the line of best fit, y=mx+b with the given data.
+
+This 'step' is simply to generate your data set. Submit your code and we will judge it.
+
+Bonus: If you are able to make code with multiple linear regression (more than one x), you get more points.
+
+(There is a link to the dataset in the Random Dataset Linear Regression Folder)
+
+
+### (12) Out Of The Box Adding
+
+Write a program that reads in two integers and adds them together, but you are not allowed to use a+b or a-b. Instead you can only use ++, - -, >, <, =, ==. (In python += 1 and -= works instead of ++ and --)
+
+Sample Input: 8 -11
+
+Sample Output: -3
